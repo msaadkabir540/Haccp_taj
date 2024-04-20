@@ -30,3 +30,5 @@ Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanc
 
 // Validate Employee Code    
 Route::get('validate-employee/{employeecode}', [EmployeeProfileController::class, 'validateEmployee']);
+// Create Employee
+Route::post('/add-employee', [EmployeeProfileController::class, 'createEmployee']);
